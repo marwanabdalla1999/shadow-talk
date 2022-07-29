@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#141419"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp"
+    tools:context=".phonenumber">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="2dp"
+            android:textColor="#FBFBFB"
+            android:shadowColor="#7784C5"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="20"
+            android:gravity="center"
+            android:text="Verification phone"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countrycode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:ccp_autoDetectCountry="true"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/phonenubmerbg"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="+20"
+                    android:inputType="phone"
+                    android:padding="0dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#86FFFFFF"
+                    app:ccpDialog_backgroundColor="#2A2D3E"
+                    app:ccpDialog_searchEditTextTint="#FFFFFF"
+                    app:ccpDialog_textColor="#FFFFFF"
+                    app:ccp_arrowColor="#FFFFFF"
+                    app:ccp_contentColor="#FFFFFF"
+                    app:ccp_flagBorderColor="#FFFFFF"
+                    app:ccp_rememberLastSelection="true" />
+
+                <EditText
+                    android:id="@+id/phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/phonenubmerbg"
+                    android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="phone number"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="#86FFFFFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/next1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbg"
+                android:text="Next"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#2A2D3E" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

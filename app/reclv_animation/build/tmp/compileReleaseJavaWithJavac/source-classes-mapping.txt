@@ -1,0 +1,2 @@
+com/app/RecylerviewAnimation/BuildConfig.java
+ com.app.RecylerviewAnimation.BuildConfig

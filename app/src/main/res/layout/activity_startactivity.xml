@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141419"
+    android:orientation="vertical"
+    tools:context=".startactivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/half_circle_bg"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:shadowColor="#000000"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="1"
+        android:text="Shadow Talk"
+        android:textColor="#FBFBFB"
+        android:textSize="35sp"
+        android:textStyle="normal"
+       />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:alpha="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/half_circle_bg_reverse"
+        android:orientation="horizontal"
+        android:paddingLeft="60dp"
+        android:paddingTop="60dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="60dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Or Sign in with :"
+            android:textColor="#8BFFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/facebook" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="facebook"
+                android:textColor="#8BFFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/googleicon" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Google"
+                android:textColor="#8BFFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

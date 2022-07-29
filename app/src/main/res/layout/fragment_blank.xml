@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141419"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    tools:context=".BlankFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/matching"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="#2A2D3E"
+                app:cardCornerRadius="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <RelativeLayout
+                    android:id="@+id/loadingblockandmatches"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
+
+                    <ProgressBar
+                        android:id="@+id/loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtmatch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Find Match"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="1dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="3dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_baseline_fiber_manual_record_24"
+                            android:gravity="center"
+                            android:text="70"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Shadow online"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="60dp"
+                    android:text="00:00"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="@string/cancel"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/matching" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/half_circle_bg"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:shadowColor="#000000"
+                android:shadowDx="15"
+                android:shadowDy="15"
+                android:shadowRadius="1"
+                android:text="Shadow Talk"
+                android:textColor="#FBFBFB"
+                android:textSize="35sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Filtering by Tags:"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:background="#2A2D3E"
+                android:gravity="center"
+                android:padding="3dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Premium"
+                android:textColor="#FFD600"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:padding="3dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Soon"
+                android:textColor="#FFD600"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fristtag"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="#474747"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="#AddTag" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/secondtag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="#474747"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="#AddTag" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/thirdtag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="#474747"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="#AddTag" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="#474747"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:id="@+id/fourthtag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="#AddTag" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="#474747"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:id="@+id/fifthtag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="#AddTag" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="#474747"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:id="@+id/sixtag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="#AddTag" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

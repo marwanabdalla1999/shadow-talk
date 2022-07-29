@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="WideDialog" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowBackground">#00FFFFFF</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="mydialog"></style>
+    <style name="WideDialog.Transparent" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorPrimaryVariant">#FFFFFF</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+    </style>
+
+</resources>

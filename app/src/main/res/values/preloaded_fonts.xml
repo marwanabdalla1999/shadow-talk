@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abeezee_italic</item>
+        <item>@font/abril_fatface</item>
+        <item>@font/aclonica</item>
+        <item>@font/amarante</item>
+        <item>@font/asset</item>
+        <item>@font/caesar_dressing</item>
+        <item>@font/cinzel_decorative</item>
+        <item>@font/droid_sans_mono</item>
+        <item>@font/modern_antiqua</item>
+        <item>@font/philosopher</item>
+        <item>@font/skranji</item>
+    </array>
+</resources>

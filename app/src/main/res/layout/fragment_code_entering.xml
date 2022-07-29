@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#141419"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    tools:context=".code_entering">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/enterotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:paddingLeft="35dp"
+            android:paddingRight="40dp"
+            android:text="Enter Otp"
+            android:textColor="#FBFBFB"
+            android:shadowColor="#7784C5"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="20"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/pincodetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:paddingLeft="35dp"
+            android:paddingRight="40dp"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/txt_pin_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:cursorVisible="false"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:layoutDirection="ltr"
+            android:maxLength="6"
+            android:textSize="20sp"
+            app:pinBackgroundDrawable="@drawable/pinbackground"
+            app:pinBackgroundIsSquare="true">
+
+        </com.alimuzaffar.lib.pin.PinEntryEditText>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="60"
+                android:textColor="#03A9F4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/resend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Resend"
+                android:textColor="#03A9F4"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
